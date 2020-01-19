@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name EFR32)(type Legacy)(uri ${KIPRJMOD}/lib/EFR32.lib)(options "")(descr ""))
+  (lib (name HDC2080)(type Legacy)(uri ${KIPRJMOD}/lib/HDC2080.lib)(options "")(descr ""))
 )
