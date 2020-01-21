@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name batt)(type KiCad)(uri ${KIPRJMOD}/lib/batt.pretty)(options "")(descr ""))
+  (lib (name Antenna_Extra)(type KiCad)(uri ${KIPRJMOD}/lib/Antenna_Extra.pretty)(options "")(descr ""))
+)
