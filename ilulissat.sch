@@ -680,10 +680,10 @@ Wire Wire Line
 Wire Wire Line
 	1750 3250 2150 3250
 Wire Wire Line
-	1750 3350 2150 3350
+	3650 2800 4050 2800
 Text Label 1800 3150 0    50   ~ 0
 HDC_SDA
-Text Label 1800 3350 0    50   ~ 0
+Text Label 3750 2800 0    50   ~ 0
 HDC_INT
 Text Label 1800 3250 0    50   ~ 0
 HDC_SCL
@@ -874,7 +874,7 @@ LFXTAL_O
 Wire Wire Line
 	2450 1250 2450 1300
 Connection ~ 2450 1250
-NoConn ~ 3650 2800
+NoConn ~ 2150 3350
 NoConn ~ 3650 2900
 NoConn ~ 3650 3000
 $Comp
