@@ -873,7 +873,6 @@ LFXTAL_O
 Wire Wire Line
 	2450 1250 2450 1300
 Connection ~ 2450 1250
-NoConn ~ 2150 3350
 NoConn ~ 3650 2900
 $Comp
 L power:GND #PWR019
@@ -940,12 +939,12 @@ Wire Wire Line
 Wire Wire Line
 	3650 3000 4200 3000
 $Comp
-L Connector_Generic:Conn_01x06 J?
+L Connector_Generic:Conn_01x06 J1
 U 1 1 5E513834
 P 8950 2150
-F 0 "J?" H 9030 2142 50  0000 L CNN
+F 0 "J1" H 9030 2142 50  0000 L CNN
 F 1 "Conn_01x06" H 9030 2051 50  0000 L CNN
-F 2 "" H 8950 2150 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical" H 8950 2150 50  0001 C CNN
 F 3 "~" H 8950 2150 50  0001 C CNN
 	1    8950 2150
 	1    0    0    -1  
@@ -958,4 +957,47 @@ Wire Wire Line
 	8000 1950 8750 1950
 Wire Wire Line
 	8000 2050 8750 2050
+Wire Wire Line
+	2150 3350 1500 3350
+Text Label 1700 3350 0    50   ~ 0
+USRLED
+$Comp
+L Device:R_Small R?
+U 1 1 5E5419C9
+P 1400 3350
+F 0 "R?" V 1204 3350 50  0000 C CNN
+F 1 "360R" V 1295 3350 50  0000 C CNN
+F 2 "" H 1400 3350 50  0001 C CNN
+F 3 "~" H 1400 3350 50  0001 C CNN
+	1    1400 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5E542201
+P 1100 3350
+F 0 "D?" H 1100 3585 50  0000 C CNN
+F 1 "RED" H 1100 3494 50  0000 C CNN
+F 2 "" V 1100 3350 50  0001 C CNN
+F 3 "~" V 1100 3350 50  0001 C CNN
+	1    1100 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3350 1200 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5E546EAB
+P 950 3400
+F 0 "#PWR?" H 950 3150 50  0001 C CNN
+F 1 "GND" H 955 3227 50  0000 C CNN
+F 2 "" H 950 3400 50  0001 C CNN
+F 3 "" H 950 3400 50  0001 C CNN
+	1    950  3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3350 950  3350
+Wire Wire Line
+	950  3350 950  3400
 $EndSCHEMATC
