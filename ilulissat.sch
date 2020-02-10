@@ -638,7 +638,7 @@ Wire Wire Line
 Text Label 5500 2050 0    50   ~ 0
 HDC_INT
 Wire Wire Line
-	10700 2300 9950 2300
+	8750 2350 8000 2350
 $Comp
 L power:GND #PWR015
 U 1 1 5E2E7195
@@ -687,7 +687,6 @@ Text Label 3750 2800 0    50   ~ 0
 HDC_INT
 Text Label 1800 3250 0    50   ~ 0
 HDC_SCL
-NoConn ~ 3650 3100
 NoConn ~ 3650 3200
 NoConn ~ 3650 3300
 NoConn ~ 3650 3400
@@ -747,9 +746,9 @@ Wire Wire Line
 Connection ~ 1000 1550
 Wire Wire Line
 	1000 1550 1000 1650
-Text Label 10150 2100 0    50   ~ 0
+Text Label 8200 2150 0    50   ~ 0
 SWDIO
-Text Label 10150 2300 0    50   ~ 0
+Text Label 8200 2350 0    50   ~ 0
 SWCLK
 $Comp
 L Switch:SW_SPST SW1
@@ -828,7 +827,7 @@ Text Label 1000 1500 0    50   ~ 0
 Text Label 1000 1950 0    50   ~ 0
 -
 Wire Wire Line
-	10700 2100 9950 2100
+	8750 2150 8000 2150
 Text Label 2500 2400 1    50   ~ 0
 PAVDD
 Text Label 2750 2450 0    50   ~ 0
@@ -876,44 +875,32 @@ Wire Wire Line
 Connection ~ 2450 1250
 NoConn ~ 2150 3350
 NoConn ~ 3650 2900
-NoConn ~ 3650 3000
-$Comp
-L Connector_Generic:Conn_01x04 J1
-U 1 1 5E470F09
-P 10900 2200
-F 0 "J1" H 10980 2192 50  0000 L CNN
-F 1 "Conn_01x04" H 10980 2101 50  0000 L CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 10900 2200 50  0001 C CNN
-F 3 "~" H 10900 2200 50  0001 C CNN
-	1    10900 2200
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR019
 U 1 1 5E47862B
-P 9950 2200
-F 0 "#PWR019" H 9950 1950 50  0001 C CNN
-F 1 "GND" V 9955 2072 50  0000 R CNN
-F 2 "" H 9950 2200 50  0001 C CNN
-F 3 "" H 9950 2200 50  0001 C CNN
-	1    9950 2200
+P 8000 2250
+F 0 "#PWR019" H 8000 2000 50  0001 C CNN
+F 1 "GND" V 8005 2122 50  0000 R CNN
+F 2 "" H 8000 2250 50  0001 C CNN
+F 3 "" H 8000 2250 50  0001 C CNN
+	1    8000 2250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10700 2200 9950 2200
+	8750 2250 8000 2250
 $Comp
 L power:VDD #PWR020
 U 1 1 5E47C814
-P 9950 2400
-F 0 "#PWR020" H 9950 2250 50  0001 C CNN
-F 1 "VDD" V 9968 2527 50  0000 L CNN
-F 2 "" H 9950 2400 50  0001 C CNN
-F 3 "" H 9950 2400 50  0001 C CNN
-	1    9950 2400
+P 8000 2450
+F 0 "#PWR020" H 8000 2300 50  0001 C CNN
+F 1 "VDD" V 8018 2577 50  0000 L CNN
+F 2 "" H 8000 2450 50  0001 C CNN
+F 3 "" H 8000 2450 50  0001 C CNN
+	1    8000 2450
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10700 2400 9950 2400
+	8750 2450 8000 2450
 $Comp
 L Switch:SW_SPST SW2
 U 1 1 5E492791
@@ -944,4 +931,31 @@ Wire Wire Line
 	1100 3450 1100 3550
 Text Label 1700 3450 0    50   ~ 0
 ~USRBTN~
+Text Label 3800 3000 0    50   ~ 0
+UART_TX
+Text Label 3800 3100 0    50   ~ 0
+UART_RX
+Wire Wire Line
+	3650 3100 4200 3100
+Wire Wire Line
+	3650 3000 4200 3000
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5E513834
+P 8950 2150
+F 0 "J1" H 9030 2142 50  0000 L CNN
+F 1 "Conn_01x06" H 9030 2051 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical" H 8950 2150 50  0001 C CNN
+F 3 "~" H 8950 2150 50  0001 C CNN
+	1    8950 2150
+	1    0    0    -1  
+$EndComp
+Text Label 8200 1950 0    50   ~ 0
+UART_TX
+Text Label 8200 2050 0    50   ~ 0
+UART_RX
+Wire Wire Line
+	8000 1950 8750 1950
+Wire Wire Line
+	8000 2050 8750 2050
 $EndSCHEMATC
